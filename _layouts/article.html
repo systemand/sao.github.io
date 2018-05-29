@@ -22,15 +22,15 @@
                 class="mejs-player"
                 controls=""
                 data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}'
-                preload="auto"
-                src="{{ page.audio_file_path | prepend:site.github.url }}"
+                preload="metadata"
+		src="http://audio.systemand.online/{{page.audio_file_path}}"
                 width="100%"
               >
               </audio>
             </p>
             <p class="text-right">
               <small>
-                <a href="{{ page.audio_file_path | prepend:site.github.url }}">MP3ファイルをダウンロード</a>
+                <a href="http://audio.systemand.online/{{page.audio_file_path}}">MP3ファイルをダウンロード</a>
               </small>
             </p>
             <h2>
@@ -55,7 +55,7 @@
             {{ content }}
           </section>
           <footer class="article-footer">
-            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?hashtags={{ site.hashtag }}&url={{ site.github.url }}{{ page.url }}&text={{ page.title }}">
+             <a class="twitter-share-button" href="https://twitter.com/intent/tweet?hashtags={{ site.hashtag }}&url={{ site.github.url }}{{ page.url }}&text={{ page.title }}">
               Tweet
             </a>
           </footer>

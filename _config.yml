@@ -1,33 +1,48 @@
 actors:
-  alice:
-    image_url: /images/actors/alice.png
-    name: alice
-    url: http://sns.example.com/alice
-  bob:
-    image_url: /images/actors/bob.png
-    name: bob
-    url: http://sns.example.com/bob
-author: alice
-description: Example description
-description_long: Example long description
-email: info@example.com
+  takiguchi:
+    image_url: /images/actors/takiguchi.jpg
+    name: Koji Takiguchi
+    url: /takiguchi.html
+  suzuki:
+    image_url: /images/actors/suzuki.jpg
+    name: Tadashi Suzuki
+    url: /suzuki.html
+  miyaji-ma:
+    image_url: /images/actors/miyaji-ma.jpg
+    name: Miyaji-ma
+    url: /miyaji-ma.html
+  ishiwata:
+    image_url: /images/actors/ishiwata.jpg
+    name: Tokio Ishiwata
+    url: /ishiwata.html
+  fukuhara:
+    image_url: /images/actors/guest.jpg
+    name: Akira Fukuhara
+    url: #
+  Guest:
+    image_url: /images/actors/guest.jpg
+    name: Guest
+    url: #
+author: system and genius
+description: 中堅SIerと、初心者WEBエンジニアが雑談するテック系ポッドキャストです。
+description_long: SEの番組です。中堅SIerとWEBエンジニアが雑談するテック系ポッドキャストです。今興味を持っている技術・ガジェット、業界全体や技術的に悩んでいることなど、リスナーさんと共有できれば嬉しいです！
+email: miyaji-ma@users.noreply.github.com
 exclude:
-  - docker
-  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
   - LICENSE.txt
   - README.md
   - vendor
-google_analytics:
-hashtag: examplehashtag
-itunes_podcast_url:
-keywords: comma,separated,keywords
+hashtag: systemand
+itunes_podcast_url: pcast://feeds.feedburner.com/sagonline
+keywords: テック系,エンジニア,中堅,ポッドキャスト,Podcast
 language: ja
 markdown: kramdown
 permalink: /episode/:title
 sass:
   sass_dir: css
 timezone: Asia/Tokyo
-title: Example title
-url: http://example.com
+title: systemand.online
+url: http://systemand.online
+gems:
+  - jekyll-sitemap
