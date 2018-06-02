@@ -43,6 +43,6 @@ sass:
   sass_dir: css
 timezone: Asia/Tokyo
 title: systemand.online
-url: http://systemand.online
+url: https://systemand.online
 gems:
   - jekyll-sitemap
