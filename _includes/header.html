@@ -37,7 +37,16 @@
             </script>
         </div>
     
-        <div style="clear: both;"></div>
+        <div>
+        </div>
+
+        <div style="clear: both;">
+            <ul id="nav">
+               {% for item in site.data.samplelist.docs %}
+                  <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+               {% endfor %}
+            </ul>
+        </div>
     </div>
 
     </div>
