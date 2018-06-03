@@ -46,3 +46,5 @@ title: systemand.online
 url: https://systemand.online
 gems:
   - jekyll-sitemap
+paginate: 10
+
