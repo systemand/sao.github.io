@@ -7,10 +7,10 @@ actors:
     image_url: /images/actors/suzuki.jpg
     name: Tadashi Suzuki
     url: /suzuki.html
-  miyaji-ma:
-    image_url: /images/actors/miyaji-ma.jpg
+  myazzy:
+    image_url: /images/actors/myazzy.jpg
     name: Miyaji-ma
-    url: /miyaji-ma.html
+    url: /myazzy.html
   ishiwata:
     image_url: /images/actors/ishiwata.jpg
     name: Tokio Ishiwata
@@ -26,7 +26,7 @@ actors:
 author: system and genius
 description: 中堅SIerと、初心者WEBエンジニアが雑談するテック系ポッドキャストです。
 description_long: SEの番組です。中堅SIerとWEBエンジニアが雑談するテック系ポッドキャストです。今興味を持っている技術・ガジェット、業界全体や技術的に悩んでいることなど、リスナーさんと共有できれば嬉しいです！
-email: miyaji-ma@users.noreply.github.com
+email: myazzy@users.noreply.github.com
 exclude:
   - Gemfile
   - Gemfile.lock
