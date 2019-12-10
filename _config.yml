@@ -1,31 +1,31 @@
 actors:
   takiguchi:
     image_url: /images/actors/takiguchi.jpg
-    name: Koji Takiguchi
+    name: taki
     url: /takiguchi.html
   suzuki:
     image_url: /images/actors/suzuki.jpg
-    name: Tadashi Suzuki
+    name: suzuki
     url: /suzuki.html
   myazzy:
     image_url: /images/actors/myazzy.jpg
-    name: myazzy
+    name: みやのじ
     url: /myazzy.html
   ishiwata:
     image_url: /images/actors/ishiwata.jpg
-    name: Tokio Ishiwata
+    name: tokio
     url: /ishiwata.html
   fukuhara:
     image_url: /images/actors/guest.jpg
-    name: Akira Fukuhara
+    name: fukuhara
     url: #
   Guest:
     image_url: /images/actors/guest.jpg
     name: Guest
     url: #
 author: system and genius
-description: 中堅SIerと、初心者WEBエンジニアが雑談するテック系ポッドキャストです。
-description_long: SEの番組です。中堅SIerとWEBエンジニアが雑談するテック系ポッドキャストです。今興味を持っている技術・ガジェット、業界全体や技術的に悩んでいることなど、リスナーさんと共有できれば嬉しいです！
+description: SIerが雑談するテック系ポッドキャストです。
+description_long: SEの番組です。SIerが雑談するテック系ポッドキャストです。今興味を持っている技術・ガジェット、業界や技術的に悩んでいることなど、リスナーさんと共有できれば嬉しいです！
 email: myazzy@users.noreply.github.com
 exclude:
   - Gemfile
