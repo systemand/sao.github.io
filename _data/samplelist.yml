@@ -1,3 +1,6 @@
 docs:
-- title: Top
-  url: /
+        ##- title: Top
+        ##  url: /
+  - title: 定期購読する
+    url: pcast://feeds.feedburner.com/sagonline
+

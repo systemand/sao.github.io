@@ -1,20 +1,20 @@
 actors:
-  takiguchi:
-    image_url: /images/actors/takiguchi.jpg
+  taki:
+    image_url: /images/actors/taki.jpg
     name: taki
-    url: /takiguchi.html
+    url: /taki.html
   suzuki:
     image_url: /images/actors/suzuki.jpg
     name: suzuki
     url: /suzuki.html
-  myazzy:
-    image_url: /images/actors/myazzy.jpg
-    name: みやのじ
-    url: /myazzy.html
-  ishiwata:
-    image_url: /images/actors/ishiwata.jpg
+  miyanoji:
+    image_url: /images/actors/miyanoji.jpg
+    name: miyanoji
+    url: /miyanoji.html
+  tokio:
+    image_url: /images/actors/tokio.jpg
     name: tokio
-    url: /ishiwata.html
+    url: /tokio.html
   fukuhara:
     image_url: /images/actors/guest.jpg
     name: fukuhara
@@ -26,7 +26,7 @@ actors:
 author: system and genius
 description: SIerが雑談するテック系ポッドキャストです。
 description_long: SEの番組です。SIerが雑談するテック系ポッドキャストです。今興味を持っている技術・ガジェット、業界や技術的に悩んでいることなど、リスナーさんと共有できれば嬉しいです！
-email: myazzy@users.noreply.github.com
+email: miyanoji@users.noreply.github.com
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -44,6 +44,7 @@ sass:
 timezone: Asia/Tokyo
 title: systemand.online
 url: https://systemand.online
+cdn: https://cdn.systemand.online
 gems:
   - jekyll-sitemap
 paginate: 10
