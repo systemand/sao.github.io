@@ -1,8 +1,8 @@
 actors:
-  taki:
-    image_url: /images/actors/taki.jpg
-    name: taki
-    url: /taki.html
+  takky:
+    image_url: /images/actors/takky.jpg
+    name: takky
+    url: /takky.html
   suzuki:
     image_url: /images/actors/suzuki.jpg
     name: suzuki
@@ -11,13 +11,13 @@ actors:
     image_url: /images/actors/miyanoji.jpg
     name: miyanoji
     url: /miyanoji.html
-  tokio:
-    image_url: /images/actors/tokio.jpg
-    name: tokio
-    url: /tokio.html
-  fukuhara:
+  issie:
+    image_url: /images/actors/issie.jpg
+    name: issie
+    url: /issie.html
+  fukkun:
     image_url: /images/actors/guest.jpg
-    name: fukuhara
+    name: fukkun
     url: #
   Guest:
     image_url: /images/actors/guest.jpg
