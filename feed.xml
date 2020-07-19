@@ -26,7 +26,7 @@
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ site.github.url }}{{ post.url }}</link>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-	<description>{{ post.content | xml_escape }}<p>※番組での出演者の発言は個人の意見であり、所属する組織とは一切関係ありません。</p></description>
+	<description>{{ post.content | xml_escape }}<br/><p>※番組での出演者の発言は個人の意見であり、所属する組織とは一切関係ありません。</p></description>
         <guid isPermaLink="true">{{ site.github.url }}{{ post.url }}</guid>
 	<enclosure url="http://audio.systemand.online/{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mp3"/>
         <itunes:author>{{ site.author }}</itunes:author>
