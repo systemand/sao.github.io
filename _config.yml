@@ -24,8 +24,8 @@ actors:
     name: Guest
     url: #
 author: system and genius
-description: SIerが雑談するテック系ポッドキャストです。
-description_long: SEの番組です。SIerが雑談するテック系ポッドキャストです。今興味を持っている技術・ガジェット、業界や技術的に悩んでいることなど、リスナーさんと共有できれば嬉しいです！
+description: IT系エンジニアが雑談するポッドキャストです。
+description_long: IT系エンジニアがリスナーさんと日々のお悩みについて一緒に考えていく参加型のPodcastです。質問箱や公式ツイッターからお気軽にご連絡ください！
 email: systemand.online@gmail.com
 exclude:
   - Gemfile
@@ -45,7 +45,8 @@ timezone: Asia/Tokyo
 title: systemand.online
 url: https://systemand.online
 cdn: https://cdn.systemand.online
+#cdn: http://localhost:4000
 gems:
   - jekyll-sitemap
-paginate: 10
+paginate: 1000
 
