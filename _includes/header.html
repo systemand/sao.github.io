@@ -1,16 +1,11 @@
 <header class="header">
   <div class="header-overlay">
     <div class="container">
-
-
-
       <div style="clear: both;"></div>
 
       <!-- Title -->
       <h1 class="header-heading" style="clear: both;">
-        <a href="{{ site.github.url }}">
-          {{ site.title }}
-        </a>
+        {{ site.title }}
       </h1>
 
       <!-- Program Description -->
@@ -19,38 +14,17 @@
       </div>
     </div>
 
-    <div class="container header-heading">
-
-        <div style="float: left" id="subscribe">
-    
-            <script>
-            var subBtn = document.getElementById('subscribe_btn');
-    
-            var ua = navigator.userAgent.toLowerCase();
-            var isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
-            var isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
-             
-            if(isAndroid | isAndroidTablet) {
-                subBtn.setAttribute("href", "http://subscribeonandroid.com/feeds.feedburner.com/sagonline");
-            }
-            </script>
-        </div>
-    
-        <div>
-        </div>
-
-        <div style="clear: both;">
-            <ul id="nav">
-               {% for item in site.data.samplelist.docs %}
-                  <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
-               {% endfor %}
-            </ul>
-        </div>
+    <div class="container">
+      <div id="nav">
+        {% for item in site.navigators %}
+        <span>
+          <i class="{{ item.icon }}"></i>
+          <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+        </span>
+        {% endfor %}
+      </div>
+      <div style="clear: both;"></div>
     </div>
-
-    </div>
-    <div>
   </div>
-
+  <div></div>
 </header>
-

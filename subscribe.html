@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container">
+	<div class="subscribe">
+		<div class="card">
+			<h1 class='subscribe-header'>番組の定期購読</h1>
+			<p class='subscribe-body'>systemand.onlineはRSSでポッドキャストを配信しています。お好みのプレーヤーで番組をサブスクライブして頂くと、最新エピソードの通知が届きます。</p>
+			<div class='subscribe-list'>
+				{% for item in site.subscribes %}
+				<span><i class="{{item.icon}}"></i><a href="{{item.url}}" target="_blank">{{item.title}}</a></span>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+

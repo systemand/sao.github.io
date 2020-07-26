@@ -3,7 +3,7 @@
     margin-bottom: 24px;
 
     &-note {
-      color: $color-text-dark-secondary;
+      color: $color-text-secondary;
       font-size: 0.9em;
     }
   }
@@ -15,5 +15,16 @@
 
   audio {
     width: 100%;
+  }
+
+  &-actors{
+    &-actor{
+      float: left;
+      margin-left: 40px;
+
+      &-name{
+        text-align: center;
+      }
+    }
   }
 }

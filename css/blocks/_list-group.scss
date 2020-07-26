@@ -1,14 +1,33 @@
 .list-group-element {
-  color: $color-text-dark-primary;
   display: block;
   font-size: 0.9rem;
   line-height: 1.7;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   padding-top: 16px;
   position: relative;
 
+  border-bottom: 1px solid #696969;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 4px;
+
   &-heading {
     font-size: 1.5rem;
+  }
+
+  &-date {
+    color: $color-text-secondary;
+    float: right;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    top: -1px;
+  }
+
+  &-title a {
+    color: $color-background-hint;
+    width: 100%;
+    word-break: break-all;
   }
 
   &-images {

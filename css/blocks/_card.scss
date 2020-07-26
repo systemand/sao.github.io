@@ -1,12 +1,16 @@
 .card {
-  background-color: #fff;
+  color: $color-text-secondary;
+  a {
+    color: $color-background-hint;
+  }
+
   border-radius: 2px;
-  margin-bottom: 24px;
+  margin-top: 16px;
 
   &-body,
-  &-header {
-    padding-bottom: 32px;
-    padding-top: 32px;
+  &-header,
+  &-footer {
+    padding: 10px;
   }
 
   &-body + &-body,
@@ -15,7 +19,7 @@
   }
 
   &-body-large {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   &-header {
@@ -23,12 +27,13 @@
   }
 
   &-heading {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    color: $color-background-hint;
   }
 
   &-paragraph {
     & + & {
-      margin-top: 1em;
+      margin-top: 0.9em;
     }
   }
 

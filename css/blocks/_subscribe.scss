@@ -1,0 +1,23 @@
+.subscribe {
+   &-header{
+     font-size: 1.6rem;
+   }
+   &-body{
+      margin-top: 20px;
+   }       
+   &-list {
+     font-size: 1.1rem;
+      margin-top: 20px;
+      color: $color-text-hint;
+      a {
+           color: $color-text-hint;
+      }
+       span{
+          background-color: $color-background-hint;
+          border-radius: 10px;
+          display: inline-block;
+          margin: 5px;
+          padding: 5px 15px 5px 15px;
+       }
+   }
+}

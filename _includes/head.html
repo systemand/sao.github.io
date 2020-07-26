@@ -1,42 +1,87 @@
 <head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta charset="utf-8" />
+  <title>
+    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+  </title>
+  <meta name="viewport" content="width=device-width" />
+  <meta
+    name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+  />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="twitter:image" content="{{ site.github.url }}/images/artwork.png" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:image" content="{{ site.github.url }}/images/artwork.png" />
+  <meta
+    name="twitter:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+  />
+  <meta
+    name="twitter:image"
+    content="{{ site.github.url }}/images/artwork.png"
+  />
+  <meta
+    name="twitter:title"
+    content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}"
+  />
+  <meta
+    property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+  />
+  <meta
+    property="og:image"
+    content="{{ site.github.url }}/images/artwork.png"
+  />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:type" content="blog" />
   <meta property="og:url" content="{{ site.github.url }}{{ page.url }}" />
-  <link rel="alternate" type="application/rss+xml" href="{{ site.github.url }}/feed.xml" />
-  <link rel="stylesheet" href="{{ site.cdn }}/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
-  <link rel="alternate" href="https://systemand.online/">
-  <link rel="alternate" href="http://www.systemand.online/">
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{ site.github.url }}/feed.xml"
+  />
+  <link rel="stylesheet" href="{{ site.cdn }}/css/main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css"
+  />
+  <link rel="alternate" href="https://systemand.online/" />
+  <link rel="alternate" href="http://www.systemand.online/" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119572509-1"></script>
+  <script
+    src="https://kit.fontawesome.com/2a819307b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-119572509-1"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-119572509-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-119572509-1");
   </script>
 
   <!-- Twitter universal website tag code -->
   <script>
-  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-  // Insert Twitter Pixel ID and Standard Event data below
-  twq('init','o0xgk');
-  twq('track','PageView');
+    !(function (e, t, n, s, u, a) {
+      e.twq ||
+        ((s = e.twq = function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }),
+        (s.version = "1.1"),
+        (s.queue = []),
+        (u = t.createElement(n)),
+        (u.async = !0),
+        (u.src = "//static.ads-twitter.com/uwt.js"),
+        (a = t.getElementsByTagName(n)[0]),
+        a.parentNode.insertBefore(u, a));
+    })(window, document, "script");
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq("init", "o0xgk");
+    twq("track", "PageView");
   </script>
   <!-- End Twitter universal website tag code -->
-
 </head>

@@ -1,10 +1,55 @@
 <footer class="footer">
   <div class="container">
-    <div class="footer-copyright">
+    <div class="footer-contact card">
+      <h2>systemand.online</h2>
+        <ul>
+        {% for actor in site.actors %}
+        {% if actor[0] == 'Guest' %}
+          {% continue %}
+        {% else %}
+          <li>
+              {% if actor[1].url != null %}
+              <a href="{{ actor[1].url }}" class="actor[1]" target="_blank">
+              {% endif %}
+              <img src="{{ actor[1].image_url | prepend:site.github.url }}" alt="{{ actor[1].name }}" class="actor-image" width="20" height="20">
+              {{ actor[0] }}
+              {% if actor[1].url != null %}
+              </a>
+              {% endif %}
+          </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-feedbuck card">
+      <h2>feedback</h2>
+      <ul>
+      {% for item in site.feedbacks %}
+      <li>
+        <i class="{{item.icon}}"></i><a href="{{item.url}}">{{item.title}}</a></span>
+      </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-subscribe card">
+      <h2>subscribe</h2>
+      <ul>
+      {% for item in site.subscribes %}
+      <li>
+        <i class="{{item.icon}}"></i><a href="{{item.url}}">{{item.title}}</a></span>
+      </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-copyright row">
       © 2017 <a href="{{ site.github.url }}">system and genius</a>
     </div>
   </div>
 </footer>
-<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+<script
+  type="text/javascript"
+  async
+  src="https://platform.twitter.com/widgets.js"
+></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>

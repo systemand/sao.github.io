@@ -1,28 +1,26 @@
 actors:
-  takky:
-    image_url: /images/actors/takky.jpg
-    name: takky
-    url: /takky.html
   suzuki:
     image_url: /images/actors/suzuki.jpg
     name: suzuki
-    url: /suzuki.html
+    url: https://twitter.com/tryagain_suzuki
   miyanoji:
     image_url: /images/actors/miyanoji.jpg
     name: miyanoji
-    url: /miyanoji.html
+    url: https://twitter.com/myazzy0
   issie:
     image_url: /images/actors/issie.jpg
     name: issie
-    url: /issie.html
+    url: https://twitter.com/tokiothechannel
+  takky:
+    image_url: /images/actors/takky.jpg
+    name: takky
+    url: https://twitter.com/taki_t_taki
   fukkun:
     image_url: /images/actors/guest.jpg
     name: fukkun
-    url: #
   Guest:
     image_url: /images/actors/guest.jpg
     name: Guest
-    url: #
 author: system and genius
 description: IT系エンジニアが雑談するポッドキャストです。
 description_long: IT系エンジニアがリスナーさんと日々のお悩みについて一緒に考えていく参加型のPodcastです。質問箱や公式ツイッターからお気軽にご連絡ください！
@@ -44,9 +42,42 @@ sass:
 timezone: Asia/Tokyo
 title: systemand.online
 url: https://systemand.online
-cdn: https://cdn.systemand.online
-#cdn: http://localhost:4000
+#cdn: https://cdn.systemand.online
+cdn: http://localhost:4000
 gems:
   - jekyll-sitemap
 paginate: 1000
 
+subscribes:
+  - title: Apple Podcasts
+    url: https://podcasts.apple.com/us/podcast/systemand-online/id1205168408
+    icon: fas fa-podcast
+
+  - title: Google Podcasts
+    url: https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL3NhZ29ubGluZQ
+    icon: fab fa-android
+
+  - title: Podcasts on Spotify
+    url: https://open.spotify.com/show/2Jx4O1eZudO0IBtXZDQ7On
+    icon: fab fa-spotify
+
+  - title: RSS
+    url: https://systemand.online/feed.xml
+    icon: fas fa-rss
+
+navigators: #逆順で並ぶ
+  - title: Subscribe
+    url: /subscribe.html
+    icon: far fa-star
+  - title: Home
+    url: /
+    icon: fas fa-home
+
+feedbacks:
+  - title: 質問箱
+    url: https://peing.net/ja/q/936744e1-91dd-4198-84e0-6ced19a0e107
+    icon: fas fa-box-open
+
+  - title: Twiter(#systemand)
+    url: https://twitter.com/search?q=%23systemand&src=typed_query&f=live
+    icon: fab fa-twitter

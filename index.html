@@ -3,28 +3,29 @@ layout: default
 ---
 
 <div class="container">
+    <!-- This loops through the paginated posts -->
+    <ul class="posts">
+      {% for post in paginator.posts %}
+      <li>
+        <article class="list-group-element">
+          <span class="list-group-element-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <h1 class="list-group-element-title">
+            <a href="{{ post.url | prepend: site.cdn }}">
+              {{ post.title | escape }}
+              (
+                {% for actor_id in post.actor_ids %}
+                  {% assign actor = site.actors[actor_id] %}
+                  {{ actor.name }}
+                {% endfor %}
+              )</a>
+          </h1>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
 
-  <div>
-
-<!-- This loops through the paginated posts -->
-<ul class="posts">
-  {% for post in paginator.posts %}
-  <li>
-      <article class="list-group-element">
-	<span class="list-group-element-date">{{ post.date | date: "%b %d, %Y" }}</span>
-	<div class="list-group-element-title">
-      	    <h1><a href="{{ post.url | prepend: site.cdn }}">{{ post.title | escape }}(
-	    	{% for actor_id in post.actor_ids %}
-	    		{% assign actor = site.actors[actor_id] %}
-	    		{{ actor.name }}
-	    	{% endfor %})</a></h1>
-        </div>
-      </article>
-  </li>
-  {% endfor %}
-</ul>
-
-<!-- Pagination links -->
+    <!-- Pagination links -->
+    <!--
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
@@ -38,6 +39,5 @@ layout: default
     <span class="next ">Next</span>
   {% endif %}
 </div>
-
-  </div>
+-->
 </div>

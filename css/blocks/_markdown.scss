@@ -15,9 +15,9 @@
   }
 
   > code {
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: $color-backgroud-primary;
     border-radius: 3px;
-    font-family: $font-family-monospace;
+    font-family: $font-family;
     font-size: 85%;
     padding-bottom: 0.2rem;
     padding-top: 0.2rem;
@@ -30,9 +30,9 @@
   }
 
   pre {
-    background-color: #f7f7f7;
+    background-color: $color-text-primary;
     border-radius: 3px;
-    font-family: $font-family-monospace;
+    font-family: $font-family;
     font-size: 85%;
     line-height: 1.45;
     overflow: auto;
