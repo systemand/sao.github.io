@@ -42,8 +42,7 @@ sass:
 timezone: Asia/Tokyo
 title: systemand.online
 url: https://systemand.online
-#cdn: https://cdn.systemand.online
-cdn: http://localhost:4000
+cdn: https://cdn.systemand.online
 gems:
   - jekyll-sitemap
 paginate: 1000
