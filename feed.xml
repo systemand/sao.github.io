@@ -1,3 +1,5 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="{{ site.language }}">
   <channel>
@@ -17,22 +19,22 @@
       <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
     <itunes:image href="{{ site.github.url }}/images/artwork.png" />
-    <itunes:category text="Technology" />
+    <itunes:category text="Technology"/>
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.posts %}
-    <item>
-      <title>{{ post.title | xml_escape }}</title>
-      <link>{{ site.github.url }}{{ post.url }}</link>
-      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <description>{{ post.content | xml_escape }>※番組での出演者の発言は個人の意見であり、所属する組織とは一切関係ありません。</description>
-      <guid isPermaLink="true">{{ site.github.url }}{{ post.url }}</guid>
-      <enclosure url="http://audio.systemand.online/{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mp3" />
-      <itunes:author>{{ site.author }}</itunes:author>
-      <itunes:subtitle>{{ post.description }}</itunes:subtitle>
-      <itunes:duration>{{ post.duration }}</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <media:thumbnail url="{{ site.github.url }}/images/artwork.png" />
-    </item>
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <link>{{ site.github.url }}{{ post.url }}</link>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+	<description>{{ post.content | xml_escape }}<br/><p>※番組での出演者の発言は個人の意見であり、所属する組織とは一切関係ありません。</p></description>
+        <guid isPermaLink="true">{{ site.github.url }}{{ post.url }}</guid>
+	<enclosure url="http://audio.systemand.online/{{ post.audio_file_path }}" length="{{ post.audio_file_size }}" type="audio/mp3"/>
+        <itunes:author>{{ site.author }}</itunes:author>
+        <itunes:subtitle>{{ post.description }}</itunes:subtitle>
+        <itunes:duration>{{ post.duration }}</itunes:duration>
+        <itunes:explicit>no</itunes:explicit>
+        <media:thumbnail url="{{ site.github.url }}/images/artwork.png"/>
+      </item>
     {% endfor %}
   </channel>
 </rss>
