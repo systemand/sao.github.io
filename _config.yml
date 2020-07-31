@@ -7,9 +7,9 @@ actors:
     image_url: /images/actors/miyanoji.jpg
     name: miyanoji
     url: https://twitter.com/myazzy0
-  issie:
-    image_url: /images/actors/issie.jpg
-    name: issie
+  isshy:
+    image_url: /images/actors/isshy.jpg
+    name: isshy
     url: https://twitter.com/tokiothechannel
   takky:
     image_url: /images/actors/takky.jpg
